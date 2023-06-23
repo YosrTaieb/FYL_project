@@ -1,0 +1,135 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Halimun;
+  src: url(/font/halimun/Halimun.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(/font/nunito/NunitoSans-SemiBold.ttf) format("truetype");
+}
+
+body {
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-image: url("/assets/fond_fyl.png");
+}
+
+/* HEADER */
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 30px 10px 70px;
+  flex-wrap: wrap;
+  border-bottom: 3px solid #e6dfbb;
+
+}
+
+.header-logo{
+  margin-right: auto;
+}
+
+.header-logo img{
+  width: 100px;
+  height: 80px;
+}
+
+.listItem{
+  list-style-type: none;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.item a {
+  /* outline: none; */
+  text-decoration: none;
+  padding: 12px;
+  color: black;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.item a:hover{
+  background-color: #e6dfbb;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+/* FORM */
+
+.contact-section {
+  padding: 50px 0px;
+}
+
+.titreForm {
+  color: rgb(182, 129, 1);
+  padding-top: 50px;
+  text-align: center;
+}
+
+.formulaire {
+  color: rgb(182, 129, 1);
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.formulaire form {
+  width: 60%;
+}
+.formulaire form .row {
+  width: 100%;
+}
+.formulaire form .row input,
+.formulaire form .row textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.formulaire form .row textarea {
+  height: 150px;
+}
+.formulaire form .row .subBtn {
+  width: 20%;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: none;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.formulaire form .row .subBtn:hover {
+  background-color: rgb(225, 209, 130);
+  color: #f1f1f1;
+}
+.formulaire form .row:nth-child(2),
+.formulaire form .row:nth-child(3) {
+  margin-top: 30px;
+}
+
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid #e6dfbb;
+  padding-top: 15px;
+}

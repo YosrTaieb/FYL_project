@@ -1,0 +1,151 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Halimun;
+  src: url(/font/halimun/Halimun.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(/font/nunito/NunitoSans-SemiBold.ttf) format("truetype");
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Nunito;
+  background-color: #EFEFEF;
+  background-image: url("/assets/fond_fyl.png");
+}
+
+/* HEADER */
+
+header{
+  font-family: Nunito;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 30px 10px 70px;
+  flex-wrap: wrap;
+  border-bottom: 3px solid #e6dfbb;
+}
+
+.header-logo{
+  margin-right: auto;
+}
+
+.header-logo img{
+  width: 100px;
+  height: 80px;
+}
+
+.listItem{
+  list-style-type: none;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.item a {
+  /* outline: none; */
+  text-decoration: none;
+  padding: 12px;
+  color: black;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.item a:hover{
+  background-color: #e6dfbb;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+
+
+.titreSec1 {
+  color: rgb(182, 129, 1);
+  letter-spacing: 10px;;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.txtImg {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.txtImg .flexContainerSection1 {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+}
+.txtImg .flexContainerSection1 .contImgSec1 {
+  width: 45%;
+  margin: 20px;
+}
+.txtImg .flexContainerSection1 .contImgSec1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+.txtImg .flexContainerSection1 .contTextSec1 {
+  width: 45%;
+  background-color: #f1f1f1;
+  height: 500px;
+  overflow: scroll;
+  margin: 20px;
+  border-radius: 15px;
+}
+.txtImg .flexContainerSection1 .contTextSec1 h2 {
+  color: rgb(182, 129, 1);
+
+  text-align: center;
+  font-size: 35px;
+}
+.txtImg .flexContainerSection1 .contTextSec1 .sousTitreSec1 {
+  text-align: center;
+}
+.txtImg .flexContainerSection1 .contTextSec1 hr {
+  width: 60px;
+}
+.txtImg .flexContainerSection1 .contTextSec1 .txtSec1 {
+  font-size: 19px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .txtImg .flexContainerSection1 {
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+  }
+  .txtImg .flexContainerSection1 .contImgSec1 {
+    width: 100%;
+  }
+  .txtImg .flexContainerSection1 .contTextSec1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .titreSec1 {
+    font-size: 25px;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid #e6dfbb;
+  padding-top: 15px;
+
+}

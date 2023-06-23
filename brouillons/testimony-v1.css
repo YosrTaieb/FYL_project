@@ -1,0 +1,148 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Halimun;
+  src: url(/font/halimun/Halimun.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(/font/nunito/NunitoSans-SemiBold.ttf) format("truetype");
+}
+
+body {
+  font-family: Nunito, Arial, Helvetica, sans-serif;
+  height: 100vh;
+  /* background: #e96443;
+  background-image: linear-gradient(to right, #904e95, #e96443); */
+  /* background-color: #d1c6bb; */
+  /* background-color: #d1c6bb; */
+  background-image: url("/assets/fond_fyl.png");
+}
+
+/* HEADER */
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 30px 10px 70px;
+  flex-wrap: wrap;
+  border-bottom: 3px solid #e6dfbb;
+
+}
+
+.header-logo{
+  margin-right: auto;
+}
+
+.header-logo img{
+  width: 100px;
+  height: 80px;
+}
+
+.listItem{
+  list-style-type: none;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.item a {
+  /* outline: none; */
+  text-decoration: none;
+  padding: 12px;
+  color: black;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.item a:hover{
+  background-color: #e6dfbb;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+
+
+/* TESTIMONY - CARDS */
+
+.testimony-title{
+  color: rgb(182, 129, 1);
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.wrapper-cards{
+  background-color: white;
+  width: 100%;
+  height: auto;
+  /* border-radius: 10px; */
+  margin: 50px auto;
+  padding: 20px 50px;
+}
+
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* cursor: pointer; */
+  gap: 20px;
+  padding: 50px 0px;
+}
+
+.card{
+  min-width: 235px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  transition: 0.8s;
+  box-shadow: 0px 2px 12px rgb(174 174 174 / 25%);
+}
+.card:hover{
+  transform: scale(1.07);
+}
+
+.card__picture img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card__title{
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.card__price{
+  font-size: 10px;
+}
+
+.card__rate i {
+  font-size: 8px;
+  color: rgb(244, 165, 34);
+}
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid #e6dfbb;
+  padding-top: 15px;
+}
